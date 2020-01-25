@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+     
+        <h2>High Scores</h2>
+        <!-- <ul><li><span id="result"></span> <span id="score"></span></li></ul> -->
+        <ul></ul>
+        <script>
+            document.getElementById("result").innerHTML = localStorage.getItem("textValue") ;
+            document.getElementById("score").innerHTML = localStorage.getItem("finalScore");
+
+
+            
+        </script>
+        
+        <form action="index.html">
+           <input id="start" type="submit" value="Begin"></input>
+        </form>
+        
+       
+        
+        
+        <!-- <h4 id="start">Start Quiz</h4> -->
+           
+        </div>
+        
+        <script src="quizz.js"></script>
+</body>
+</html>

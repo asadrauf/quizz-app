@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2 id="heading">Coding Quizz Challenge</h2>
+        <p id="para">Try to answer the following code-related questions within the time limit.Keep in mind that
+            incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <h4 id="start">Start Quiz</h4>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+           
+            <div id="choices">
+                <span class="choice" id="A" onclick="checkAnswer('A')"></span><br><br>
+                <span class="choice" id="B" onclick="checkAnswer('B')"></span><br><br>
+                <span class="choice" id="C" onclick="checkAnswer('C')"></span><br><br>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        
+        <div id="correct" style="display: none"><hr>Correct Answer</div>
+        <div id="incorrect" style="display: none"><hr>Incorrect Answer</div>
+        <div id="scoreContainer" style="display: none">
+        </div>
+        <br>
+        <form id="todo-form" action="records.html">
+            
+        <span id="span" style="display: none;">Enter Your Initial: </span><input id="textArea" type="text" style=" display:none">
+       <input id="btn"  type="submit" value="Submit"  style="display: none;">
+    </form>
+    </div>
+   <script src="quizz.js"></script>
+</body>
+</html>

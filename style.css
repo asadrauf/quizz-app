@@ -1,0 +1,179 @@
+body{
+    font-size: 15px;
+}
+
+#container{
+    margin : 80px auto;
+    background-color: white;
+    height: 400px;
+    width : 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 10px purple, 0 0 0 20px pink, 0 0 0 30px red, 0 0 0 40px orange;
+    position: relative;
+}
+#start{
+    border-radius: 10px;
+    width:80px;
+    height:20px;
+    padding: 3px;
+    border : 1px solid lightgray;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:350px;
+    top:200px;
+    color : white;
+    background-color: #32174d;
+}
+#start:hover{
+    
+    color: white;
+    background-color : #928393;
+}
+
+#question{
+    width:100%;
+    margin-left: 182px;
+    margin-bottom: 10px;
+    height : 125px;
+    
+}
+
+#question p{
+    width: 100%;
+    margin : 0;
+    padding : 90px;
+    font-size: 1.45rem;
+    font-weight: bolder;
+}
+
+#choices span{
+    
+    margin-left: 285px;  
+    
+}
+.choice{
+    color: white;
+    border : 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #32174d;
+}
+
+.choice:hover{
+    border : 1px solid grey;
+    background-color : #928393;
+}
+
+#timer{
+    position: relative; 
+    height : 100px;
+    width : 200px; 
+    bottom : 0px; 
+    text-align: center; 
+    margin-right: -80px;
+    margin-top: -180px;
+    
+}
+#counter{
+    font-size: 2em;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+/*  */
+
+
+#para{
+    text-align: center;
+    
+}
+#heading{
+    text-align: center;
+    padding: 20px;
+}
+
+#correct, #incorrect{
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#scoreContainer{
+    text-align: center;
+    padding-top: 150px;
+}
+
+#textArea{
+    padding: 2px;
+}
+
+#btn{
+    margin-left: 380px;
+    margin-top: 10px;
+}
+
+#span{
+    margin-left: 350px;
+}
+
+#textArea{
+    margin-left: 320px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+  }
+  
+  li {
+    height: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: #ff5d88;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  li:before {
+    content: "\200B";
+    position: absolute;
+  }
+  
+  li::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  
+  li button {
+    float: right;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ff9500;
+    color: white;
+    font-size: 1em;
+  }
+  
+  li button:hover {
+    background-color: #febc5d;
+  }
+  
+  
