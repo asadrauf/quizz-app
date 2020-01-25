@@ -9,13 +9,27 @@
     <div id="container">
      
         <h2>High Scores</h2>
-        <!-- <ul><li><span id="result"></span> <span id="score"></span></li></ul> -->
-        <ul></ul>
+        <ul><li><span id="result"></span> <span id="score"></span></li></ul>
+        <p>Todo Count: <span id="todo-count">0</span></p>
+        <ul id="todo-list"></ul>
         <script>
-            document.getElementById("result").innerHTML = localStorage.getItem("textValue") ;
-            document.getElementById("score").innerHTML = localStorage.getItem("finalScore");
+            
+           
+//             function init(){
 
+//                 var storeTodo = document.getElementById("result");
+//                 var storeTodos = document.getElementById("score");
+//                 if(storeTodo != null && storeTodos != null){
+                 document.getElementById("result").innerHTML =JSON.parse (localStorage.getItem("todos")) ;
+               document.getElementById("score").innerHTML = JSON.parse(localStorage.getItem("todo"));
+  
+             
+              
+//          }
+  
+//       }
 
+// init();
             
         </script>
         
