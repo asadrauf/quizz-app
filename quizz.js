@@ -168,13 +168,16 @@ function answerIsWrong(){
 var todos=[];
 var todo = [];
 function scoreRender(){
-    quiz.style.display = "none";
+    setTimeout(function() {
+        quiz.style.display = "none";
     scoreDiv.style.display = "block";
     scoreDiv.innerHTML = "Your Final Score is " + score;
     textBox.style.display = "block";
     span.style.display = "block";
     submitButton.style.display = "block";
     //localStorage.setItem("finalScore", JSON.stringify(score));
+    },1000)
+    
    
 }
 
@@ -211,14 +214,17 @@ if(todotext === ""){
 }
 todos.push(todotext);
 localStorage.setItem("todos", JSON.stringify(todos));
-todoInput.value = "";
+//todoInput.value = "";
 
-var scoretext = scoreDiv.value;
+var scoretext = scoreDiv.textContent;
 if(scoretext === ""){
   return;
 }
 todo.push(scoretext);
-localStorage.setItem("todo", JSON.stringify("todo"));
-todoInput.value = "";
-renderTodos();
+localStorage.setItem("todo", JSON.stringify(todo));
+//todoInput.value = "";
+//renderTodos();
 }
+
+//clear all values from local storage
+

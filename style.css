@@ -176,4 +176,24 @@ ul {
     background-color: #febc5d;
   }
   
+
   
+  #end{
+    border-radius: 10px;
+    width:80px;
+    height:20px;
+    padding: 3px;
+    border : 1px solid lightgray;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:480px;
+    top:279px;
+    color : white;
+    background-color: #32174d;
+}
+#end:hover{
+    
+    color: white;
+    background-color : #928393;
+}
