@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+
+    <!------------------- Custom CSS file ----------------------->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+  <body>
+      <div id="container">
+         <h2>High Scores</h2>
+         <ul><li id="todolist"></li></ul>
+
+        <!-- button that will run local storage clear function and will refresh the page -->
+          <button id="button" onClick="history.go(0);">Clear</button> 
+        <!-- This script will get our store data from local storage and display it on the webpage -->
+          <script>
+             var button = document.getElementById('button');
+             document.getElementById("todolist").innerHTML =JSON.parse (localStorage.getItem("todo"));
+
+        //  This function will clear all values from local storage
+             button.addEventListener('click', function() {
+             localStorage.clear();
+            
+             });
+                
+            </script>
+            
+            <form action="index.html">
+            <input id="start" type="submit" value="Begin" class="begin"></input><span>
+            </form>
+    </div>
+        
+        <script src="quizz.js"></script>
+</body>
+</html>

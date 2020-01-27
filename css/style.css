@@ -1,7 +1,9 @@
+/* body */
 body{
     font-size: 15px;
 }
 
+/* main container */
 #container{
     margin : 80px auto;
     background-color: white;
@@ -11,34 +13,38 @@ body{
     box-shadow: 0 0 0 10px purple, 0 0 0 20px pink, 0 0 0 30px red, 0 0 0 40px orange;
     position: relative;
 }
+
+/* Button start the quizz */
 #start{
     border-radius: 10px;
     width:80px;
-    height:20px;
+    height:22px;
     padding: 3px;
     border : 1px solid lightgray;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left:350px;
+    left:380px;
     top:200px;
     color : white;
     background-color: #32174d;
 }
+
+/* Start button hover */
 #start:hover{
     
     color: white;
     background-color : #928393;
 }
-
+/* Defining our question div */
 #question{
     width:100%;
     margin-left: 182px;
     margin-bottom: 10px;
-    height : 125px;
-    
+    height : 125px;  
 }
 
+/* Styling our question */
 #question p{
     width: 100%;
     margin : 0;
@@ -47,11 +53,14 @@ body{
     font-weight: bolder;
 }
 
+/* choices that will display */
 #choices span{
     
     margin-left: 285px;  
     
 }
+
+/* choices styling */
 .choice{
     color: white;
     border : 1px solid grey;
@@ -61,11 +70,13 @@ body{
     background-color: #32174d;
 }
 
+/* choices hovering */
 .choice:hover{
     border : 1px solid grey;
     background-color : #928393;
 }
 
+/* timer div */
 #timer{
     position: relative; 
     height : 100px;
@@ -105,12 +116,14 @@ body{
     padding: 20px;
 }
 
+/* feedback regarding answers */
 #correct, #incorrect{
     margin-top: 100px;
     margin-left: 250px;
     margin-right: 250px;
 }
 
+/* Displaying score */
 #scoreContainer{
     text-align: center;
     padding-top: 150px;
@@ -136,64 +149,72 @@ body{
 
 ul {
     list-style-type: none;
-    padding: 0;
     background-color: white;
+    padding: 0;
+    margin-left: 260px;
+    margin-top: 50px;
+    
   }
   
   li {
-    height: 20px;
+    height: 50px;
     margin-top: 2px;
     margin-bottom: 2px;
+    margin: 5px;
     padding: 5px;
-    background-color: #ff5d88;
-    color: white;
+    background-color : #e4dee8;
+    color: black;
     font-size: 1em;
-    line-height: 1.5;
+    font-weight: normal;
+    line-height: 1.2;
+    width: 168px;
   }
-  
-  li:before {
-    content: "\200B";
-    position: absolute;
-  }
-  
-  li::after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-  
-  li button {
-    float: right;
-    border: none;
-    height: 40px;
-    cursor: pointer;
-    background-color: #ff9500;
-    color: white;
-    font-size: 1em;
-  }
-  
-  li button:hover {
-    background-color: #febc5d;
-  }
-  
-
-  
-  #end{
-    border-radius: 10px;
-    width:80px;
-    height:20px;
-    padding: 3px;
-    border : 1px solid lightgray;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    left:480px;
-    top:279px;
+   
+  /* button to clear data from the local storage */
+ #button{
     color : white;
     background-color: #32174d;
-}
-#end:hover{
+    margin-left: 295px;
+    height:23px;
+    border : 1px solid lightgray;
+    border-radius: 10px;
+    width: 79px;
+    margin-top: 185px;
+ }
+
+ #button:hover{
     
     color: white;
     background-color : #928393;
 }
+
+a{
+    text-decoration: none;
+    color: #673890;
+}
+
+/* Button that will store score and username to the local storage */
+#btn{
+    color : white;
+    background-color: #32174d;
+    border : 1px solid lightgray;
+    border-radius: 10px;
+    height: 25px;
+    width: 70px;
+    margin-left: 370px;
+}
+#btn:hover{
+    
+    color: white;
+    background-color : #928393;
+}
+
+.start{
+    margin-left: -40px;
+}
+
+.begin{
+    margin-top: 135px;
+}
+
+
