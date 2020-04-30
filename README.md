@@ -1,4 +1,4 @@
-### Quizz App
+### Quizz App Deployed link -->  https://asadrauf.github.io/quizz-app/
 In this assignment, i am going to use fundamental HTML, CSS, and JavaScript skills to build a quiz application. This application will be able to load questions from a 3rd an object array, track and display high scores, and so much more! I am using HTML5 Local Storage to store my user score and username that will be displaying in the view highscore page
 
 * * Completed Tasks 
